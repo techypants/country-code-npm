@@ -1,16 +1,37 @@
 const countryCodes = require("country-codes-list");
-const object = countryCodes.customList("countryCode", "{countryNameEn}");
 
-// countryname = object["IN"].toLowerCase();
-countryDict = new Map();
+function createCountryDict() {
+  const object = countryCodes.customList("countryCode", "{countryNameEn}");
+  const countryDict = {};
 
-for (const key in object) {
-  if (object.hasOwnProperty(key)) {
-    const countryNameEn = object[key].toLowerCase();
-    const countryKey = key.toLowerCase();
+  for (const key in object) {
+    if (Object.prototype.hasOwnProperty.call(object, key)) {
+      const countryNameEn = object[key].toLowerCase();
+      const countryKey = key.toLowerCase();
 
-    countryDict.set(countryNameEn, { countryKey });
+      countryDict[countryNameEn] = countryKey;
+    }
   }
+
+  return countryDict;
 }
-// console.log(countryDict.get("india").countryKey);
-module.exports = countryDict;
+// const countryDict = createCountryDict();
+// console.log(countryDict);
+module.exports = createCountryDict;
+
+// const countryCodes = require("country-codes-list");
+// const object = countryCodes.customList("countryCode", "{countryNameEn}");
+
+// // countryname = object["IN"].toLowerCase();
+// countryDict = new Map();
+
+// for (const key in object) {
+//   if (object.hasOwnProperty(key)) {
+//     const countryNameEn = object[key].toLowerCase();
+//     const countryKey = key.toLowerCase();
+
+//     countryDict.set(countryNameEn, { countryKey });
+//   }
+// }
+// // console.log(countryDict.get("india").countryKey);
+// module.exports = countryDict;
