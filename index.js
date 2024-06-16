@@ -1,6 +1,6 @@
 const countryCodes = require("country-codes-list");
 
-function createCountryDict() {
+function codecountry() {
   const object = countryCodes.customList("countryCode", "{countryNameEn}");
   const countryDict = {};
 
@@ -17,7 +17,7 @@ function createCountryDict() {
 }
 // const countryDict = createCountryDict();
 // console.log(countryDict);
-module.exports = createCountryDict;
+module.exports = codecountry;
 
 // const countryCodes = require("country-codes-list");
 // const object = countryCodes.customList("countryCode", "{countryNameEn}");

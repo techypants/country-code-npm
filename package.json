@@ -1,5 +1,27 @@
 {
   "dependencies": {
     "country-codes-list": "^1.6.11"
-  }
+  },
+  "name": "code-country",
+  "description": "��#\u0000 \u0000c\u0000o\u0000u\u0000n\u0000t\u0000r\u0000y\u0000-\u0000c\u0000o\u0000d\u0000e\u0000-\u0000n\u0000p\u0000m\u0000\r\u0000 \u0000",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/techypants/country-code-npm.git"
+  },
+  "keywords": [
+    "country",
+    "codes"
+  ],
+  "author": "Tanmay Pant",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/techypants/country-code-npm/issues"
+  },
+  "homepage": "https://github.com/techypants/country-code-npm#readme"
 }
