@@ -8,7 +8,7 @@
 To install `country-code-npm`, simply run:
 
 ```bash
-npm install country-code-npm
+npm install code-country
 ```
 ```bash
 
